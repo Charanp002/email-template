@@ -1,354 +1,758 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
   xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office">
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if !mso]><!-- -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      @media only screen and (max-width: 640px) {
+        .deviceWidth {
+          width: 440px !important;
+          padding: 0;
+        }
 
-<!--[if !mso]><!-- -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!--<![endif]-->
+        .hideForMobile {
+          display: none !important;
+        }
 
-<style type="text/css">
+        .removePaddingForMobile {
+          padding: 0 !important;
+        }
+        .navPaddingForMobile {
+          padding: 20px !important;
+        }
+        .titlePaddingForMobile {
+          padding: 15px 20px 0 20px !important;
+        }
+        .textPaddingForMobile {
+          padding: 15px 20px 15px 20px !important;
+        }
+        .whiteBackgroundForMobile {
+          background-color: #ffffff !important;
+        }
+      }
 
-@media only screen and (max-width: 640px)  {
+      @media only screen and (max-width: 479px) {
+        .deviceWidth {
+          width: 280px !important;
+          padding: 0;
+        }
 
-.deviceWidth { width: 440px !important; padding: 0; }
+        .hideForMobile {
+          display: none !important;
+        }
 
-.hideForMobile { display: none !important; }
+        .removePaddingForMobile {
+          padding: 0 !important;
+        }
+        .navPaddingForMobile {
+          padding: 20px !important;
+        }
+        .titlePaddingForMobile {
+          padding: 15px 20px 0 20px !important;
+        }
+        .textPaddingForMobile {
+          padding: 15px 20px 15px 20px !important;
+        }
+        .whiteBackgroundForMobile {
+          background-color: #ffffff !important;
+        }
+      }
 
-.removePaddingForMobile { padding: 0 !important; }
-.navPaddingForMobile { padding: 20px !important; }
-.titlePaddingForMobile { padding: 15px 20px 0 20px !important; }
-.textPaddingForMobile { padding: 15px 20px 15px 20px !important; }
-.whiteBackgroundForMobile { background-color: #ffffff !important; }
+      .ReadMsgBody {
+        width: 100%;
+        background-color: #f6f7fb;
+      }
+      .ExternalClass {
+        width: 100%;
+        background-color: #f6f7fb;
+      }
 
-}
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f7fb;
+        font-family: Arial, sans-serif;
+        mso-line-height-rule: exactly;
+        -webkit-font-smoothing: antialiased;
+        -ms-text-size-adjust: none !important;
+      }
 
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        mso-table-lspace: 0;
+        mso-table-rspace: 0;
+      }
+      table td {
+        border-collapse: collapse;
+        mso-table-lspace: 0;
+        mso-table-rspace: 0;
+      }
 
-@media only screen and (max-width: 479px) {
+      img {
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+      }
 
-.deviceWidth { width: 280px !important; padding: 0; }
+      .nav {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #272727;
+        font-weight: normal;
+        line-height: 14px;
+        mso-line-height-rule: exactly;
+        text-align: center;
+        vertical-align: top;
+      }
 
-.hideForMobile { display: none !important; }
+      .nav a {
+        color: #272727;
+        text-decoration: none;
+      }
 
-.removePaddingForMobile { padding: 0 !important; }
-.navPaddingForMobile { padding: 20px !important; }
-.titlePaddingForMobile { padding: 15px 20px 0 20px !important; }
-.textPaddingForMobile { padding: 15px 20px 15px 20px !important; }
-.whiteBackgroundForMobile { background-color: #ffffff !important; }
+      .heading {
+        font-family: Arial, sans-serif;
+        font-size: 26px;
+        color: #45b1e2;
+        font-weight: bold;
+        line-height: 26px;
+        mso-line-height-rule: exactly;
+        text-align: center;
+        vertical-align: top;
+      }
 
-}
+      .heading a {
+        color: #45b1e2;
+        text-decoration: none;
+      }
 
+      .title {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #20a2dc;
+        font-weight: bold;
+        line-height: 24px;
+        mso-line-height-rule: exactly;
+        text-align: left;
+        vertical-align: top;
+      }
 
-.ReadMsgBody { width: 100%; background-color: #f6f7fb; }
-.ExternalClass { width: 100%; background-color: #f6f7fb; }
+      .title a {
+        color: #20a2dc;
+        text-decoration: none;
+      }
 
-body { 
-width: 100%; 
-margin: 0; 
-padding: 0; 
-background-color: #f6f7fb;
-font-family: Arial, sans-serif; 
-mso-line-height-rule: exactly;
--webkit-font-smoothing: antialiased; 
--ms-text-size-adjust: none !important;
-}
+      .rssTitle {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #20a2dc;
+        font-weight: bold;
+        line-height: 20px;
+        mso-line-height-rule: exactly;
+        text-align: left;
+        vertical-align: top;
+      }
 
-table { border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; }
-table td { border-collapse: collapse; mso-table-lspace: 0; mso-table-rspace: 0; }
+      .rssTitle a {
+        color: #20a2dc;
+        text-decoration: none;
+      }
 
-img { border: 0; -ms-interpolation-mode: bicubic; }
+      .bodyText {
+        color: #222222;
+      }
+      .bodyText a {
+        color: #20a2dc;
+        font-weight: bold;
+      }
 
+      .bodyText,
+      .bodyText a {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        mso-line-height-rule: exactly;
+        vertical-align: top;
+        text-decoration: none;
+      }
 
-.nav { 
-font-family: Arial, sans-serif; 
-font-size: 14px; 
-color: #272727; 
-font-weight: normal; 
-line-height: 14px; 
-mso-line-height-rule: exactly;
-text-align: center; 
-vertical-align: top; 
-}
+      .footerText {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        color: #999999;
+        font-weight: bold;
+        line-height: 18px;
+        mso-line-height-rule: exactly;
+        text-align: center;
+        vertical-align: top;
+      }
 
-.nav a { color: #272727; text-decoration: none; } 
+      .footerText a {
+        color: #999999;
+        text-decoration: none;
+      }
 
+      .button1 {
+        background-color: #45b1e2;
+      }
 
-.heading { 
-font-family: Arial, sans-serif; 
-font-size: 26px; 
-color: #45b1e2; 
-font-weight: bold; 
-line-height: 26px; 
-mso-line-height-rule: exactly; 
-text-align: center; 
-vertical-align: top; 
-}
+      .button1 a {
+        display: block;
+        border: 0;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold;
+        line-height: 16px;
+        text-decoration: none;
+        text-align: center;
+        background: #45b1e2;
+        border: 1px solid #45b1e2;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+      }
 
-.heading a { color: #45b1e2; text-decoration: none; }
+      .button2 {
+        background-color: #999999;
+      }
 
+      .button2 a {
+        display: block;
+        border: 0;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold;
+        line-height: 16px;
+        text-decoration: none;
+        text-align: center;
+        background: #999999;
+        border: 1px solid #999999;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+      }
 
-.title { 
-font-family: Arial, sans-serif; 
-font-size: 20px;
-color: #20a2dc; 
-font-weight: bold; 
-line-height: 24px; 
-mso-line-height-rule: exactly; 
-text-align: left; 
-vertical-align: top; 
-}
+      .button1,
+      .button2 {
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        word-break: break-word;
+        word-wrap: break-word;
+      }
+    </style>
 
-.title a { color: #20a2dc; text-decoration: none; } 
+    <!--[if gte mso 9
+      ]><xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml><!
+    [endif]-->
+  </head>
 
-
-.rssTitle { 
-font-family: Arial, sans-serif; 
-font-size: 16px; 
-color: #20a2dc; 
-font-weight: bold; 
-line-height: 20px; 
-mso-line-height-rule: exactly; 
-text-align: left; 
-vertical-align: top;
-}
-
-.rssTitle a { color: #20a2dc; text-decoration: none; }
-
-
-.bodyText { color: #222222; }
-.bodyText a { color: #20a2dc; font-weight: bold; }  
-
-.bodyText, .bodyText a { 
-font-family: Arial, sans-serif; 
-font-size: 14px; 
-line-height: 20px; 
-mso-line-height-rule: exactly; 
-vertical-align: top; 
-text-decoration: none; 
-}
-
-
-.footerText { 
-font-family: Arial, sans-serif; 
-font-size: 12px; 
-color: #999999; 
-font-weight: bold; 
-line-height: 18px; 
-mso-line-height-rule: exactly; 
-text-align: center; 
-vertical-align: top; 
-}
-
-.footerText a { color: #999999; text-decoration: none; } 
-
-
-.button1 { background-color: #45b1e2; }
-
-.button1 a {
-display: block;
-border: 0;
-padding: 10px;
-font-family: Arial, sans-serif;
-font-size: 14px;
-color: #ffffff;
-font-weight: bold;
-line-height: 16px;
-text-decoration: none; 
-text-align: center; 
-background: #45b1e2; 
-border: 1px solid #45b1e2; 
--moz-border-radius: 4px; 
--webkit-border-radius: 4px; 
-border-radius: 4px;
-}
-
-
-.button2 { background-color: #999999; } 
-
-.button2 a {
-display: block;
-border: 0;
-padding: 10px;
-font-family: Arial, sans-serif;
-font-size: 14px;
-color: #ffffff;
-font-weight: bold;
-line-height: 16px;
-text-decoration: none; 
-text-align: center; 
-background: #999999; 
-border: 1px solid #999999; 
--moz-border-radius: 4px; 
--webkit-border-radius: 4px; 
-border-radius: 4px;
-} 
-
-.button1, .button2 { 
--moz-border-radius: 4px; 
--webkit-border-radius: 4px;
-border-radius: 4px; 
-word-break: break-word; 
-word-wrap: break-word; 
-}
-
-
-</style>
-
-<!--[if gte mso 9]><xml>
-  <o:OfficeDocumentSettings>
-  <o:AllowPNG/>
-  <o:PixelsPerInch>96</o:PixelsPerInch>
-  </o:OfficeDocumentSettings>
-</xml><![endif]-->
-
-</head>
-
-
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="width:100%;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#f6f7fb;font-family:Arial, sans-serif;mso-line-height-rule:exactly;-webkit-font-smoothing:antialiased;-ms-text-size-adjust:none !important;" >
-
+  <body
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+    style="
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 0;
+      margin-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
+      background-color: #f6f7fb;
+      font-family: Arial, sans-serif;
+      mso-line-height-rule: exactly;
+      -webkit-font-smoothing: antialiased;
+      -ms-text-size-adjust: none !important;
+    "
+  >
     <!-- Start: Wrapper -->
-    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-        <tr>
-            <td width="100%" valign="top"  style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
+    <table
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      align="center"
+      style="
+        border-spacing: 0;
+        border-collapse: collapse;
+        mso-table-lspace: 0;
+        mso-table-rspace: 0;
+      "
+    >
+      <tr>
+        <td
+          width="100%"
+          valign="top"
+          style="
+            border-collapse: collapse;
+            mso-table-lspace: 0;
+            mso-table-rspace: 0;
+          "
+        >
+          <!-- Start: Preheader -->
 
-            	<!-- Start: Preheader -->
+          <!-- End: Preheader -->
 
-                <!-- End: Preheader -->
-
-                <!-- Start: Header -->
-                <table border="0" bgcolor="#77A6F7" cellpadding="0" cellspacing="0" align="center"  class="deviceWidth" style="width:580px;height:87px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                    <tr>
-                        <td align="left" valign="bottom" style="width:201px;text-align:left;vertical-align:bottom;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-
-                            <!-- Start: Logo -->
-                            <table border="0" cellpadding="0" cellspacing="0" align="left"   style="width:201px;border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0" >
-                                <tr>                                  
-                                  <td align="left" valign="bottom" style="text-align:left;vertical-align:bottom;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;diplay:flex;justify-content:left">
-                                      <img src="https://landing-wall-videos.s3.us-west-2.amazonaws.com/ses-template-test/Logo.png" align="left" alt="" border="0"   style="display:block;border-width:0;-ms-interpolation-mode:bicubic;width:90px;height:90px;margin-right: 10px;margin-left: 10px;" />
-
-                                  </td>
-                                  <td>
-                                    <p  >
-                                      <span style="color:#000000;text-decoration:none;font-family:Arial;font-size: 25px;font-weight:600">iQuizUAnswer</span>
-                                      <br/>
-                                    <span style="color:#000000;text-decoration:none;font-family:Arial;font-size:15px;margin-left: 20px;font-weight:500"> Let the Job Find You</span>
-
-                                    </p> 
-
-                                  </td>
-
-                                </tr>
-                            </table>
-
-
-                        </td>
-                    </tr>
+          <!-- Start: Header -->
+          <table
+            border="0"
+            bgcolor="#77A6F7"
+            cellpadding="0"
+            cellspacing="0"
+            align="center"
+            class="deviceWidth"
+            style="
+              width: 580px;
+              height: 87px;
+              margin-top: 0;
+              margin-bottom: 0;
+              margin-right: auto;
+              margin-left: auto;
+              border-spacing: 0;
+              border-collapse: collapse;
+              mso-table-lspace: 0;
+              mso-table-rspace: 0;
+            "
+          >
+            <tr>
+              <td
+                align="left"
+                valign="bottom"
+                style="
+                  width: 201px;
+                  text-align: left;
+                  vertical-align: bottom;
+                  border-collapse: collapse;
+                  mso-table-lspace: 0;
+                  mso-table-rspace: 0;
+                "
+              >
+                <!-- Start: Logo -->
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="left"
+                  style="
+                    width: 201px;
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    mso-table-lspace: 0;
+                    mso-table-rspace: 0;
+                  "
+                >
+                  <tr>
+                    <td
+                      align="left"
+                      valign="bottom"
+                      style="
+                        text-align: left;
+                        vertical-align: bottom;
+                        border-collapse: collapse;
+                        mso-table-lspace: 0;
+                        mso-table-rspace: 0;
+                        diplay: flex;
+                        justify-content: left;
+                      "
+                    >
+                      <img
+                        src="https://landing-wall-videos.s3.us-west-2.amazonaws.com/ses-template-test/Logo.png"
+                        align="left"
+                        alt=""
+                        border="0"
+                        style="
+                          display: block;
+                          border-width: 0;
+                          -ms-interpolation-mode: bicubic;
+                          width: 90px;
+                          height: 90px;
+                          margin-right: 10px;
+                          margin-left: 10px;
+                        "
+                      />
+                    </td>
+                    <td>
+                      <p>
+                        <span
+                          style="
+                            color: #000000;
+                            text-decoration: none;
+                            font-family: Arial;
+                            font-size: 25px;
+                            font-weight: 600;
+                          "
+                          >iQuizUAnswer</span
+                        >
+                        <br />
+                        <span
+                          style="
+                            color: #000000;
+                            text-decoration: none;
+                            font-family: Arial;
+                            font-size: 15px;
+                            margin-left: 20px;
+                            font-weight: 500;
+                          "
+                        >
+                          Let the Job Find You</span
+                        >
+                      </p>
+                    </td>
+                  </tr>
                 </table>
-                <!-- End: Header -->
+              </td>
+            </tr>
+          </table>
+          <!-- End: Header -->
 
-                <!-- Start: Main content container -->
-                <table border="0" cellspacing="0" cellpadding="0" align="center"  class="deviceWidth" style="width:580px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                    <tr>
-                        <td align="center" bgcolor="#FFFFFF" style="border-left-width:1px;border-left-style:solid;border-left-color:#e2e3e7;border-right-width:1px;border-right-style:solid;border-right-color:#e2e3e7;border-bottom-width:15px;border-bottom-style:solid;border-bottom-color:#e2e3e7;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-
-
-                            <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff"  class="deviceWidth" style="width:580px;border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-
-                                <tr>
-                                    <td  bgcolor="#D3E3FC" align="left" valign="top" bgcolor="#ffffff"  class="bodyText" style="padding-top:45px;padding-bottom:15px;padding-right:45px;padding-left:45px;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;color:#222222;font-family:Arial, sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;vertical-align:top;text-decoration:none;" >
-                                      <p>
-                                          {{message}}
-                                      </p>
-                                      <br>
-                                      <p> Click on this link:
-                                        <a href="https://gatech.iquizuanswer.com/invite-jobseeker?register=eyJERVNDIjogIkpTWCIsICJpbnZpdGVlIjogeyJ1c2VyaWQiOiB7InVzZXJfaWQiOiA0MDIsICJ1c2VyX2NhdGVnb3J5IjogIkpTWCIsICJ1c2VyX2NhdF9pZCI6IDF9LCAiaW5mbyI6IHsibmFtZSI6IHsiZGVjb3JhdG9yIjogbnVsbCwgInN1ZmZpeCI6IG51bGwsICJmaXJzdF9uYW1lIjogIkhhcmlzaCIsICJsYXN0X25hbWUiOiAiVGFsbHVydSJ9LCAiY29udGFjdCI6IHsiZW1haWwiOiAibml0aGVlc2htdnM4OEBnbWFpbC5jb20ifX19LCAiaW52aXRlciI6IHsidXNlcmlkIjogeyJ1c2VyX2lkIjogNCwgInVzZXJfY2F0ZWdvcnkiOiAiQURNIiwgInVzZXJfY2F0X2lkIjogMX0sICJpbmZvIjogeyJuYW1lIjogeyJkZWNvcmF0b3IiOiAiRFIiLCAic3VmZml4IjogIkciLCAiZmlyc3RfbmFtZSI6ICJBZG1pbiIsICJsYXN0X25hbWUiOiAiR0FUZWNoIn0sICJjb250YWN0IjogeyJlbWFpbCI6ICJnYXRlY2hfYWRtaW5AaXF1YWRyYS5jb20iLCAiaXNkIjogIjkxIiwgIm1vYmlsZV9ubyI6ICI5OTk5OTk5OTk5In0sICJjb2xsZWdlIjogbnVsbH19LCAiam9ic2VjdG9yIjogeyJpZCI6IDEsICJzaG9ydF9uYW1lIjogIkluZm9ybWF0aW9uIFRlY2hub2xvZ3kgLSBEZXZlbG9wZXJzL0FkbWluaXN0cmF0b3JzL0FyY2hpdGVjdHMvVGVzdGVycy9EZXZvcHMiLCAiZGlzcGxheV9uYW1lIjogIkluZm9ybWF0aW9uIFRlY2hub2xvZ3kgLSBEZXZlbG9wZXJzL0FkbWluaXN0cmF0b3JzL0FyY2hpdGVjdHMvVGVzdGVycy9EZXZvcHMiLCAiczNfZm9sZGVyIjogImNzaXR0ZWNoIn0sICJqb2Jyb2xlIjogeyJpZCI6IDEsICJkaXNwbGF5X25hbWUiOiAiU29mdHdhcmUgRGV2ZWxvcGVyIiwgInMzX2ZvbGRlciI6ICJTb2Z0d2FyZSBEZXZlbG9wZXIiLCAiam9ic2VjdG9yX2lkIjogbnVsbH0sICJqb2Jza2lsbHMiOiBbeyJpZCI6IDEsICJkaXNwbGF5X25hbWUiOiAiQWJpbml0aW8iLCAiczNfZm9sZGVyIjogImFiaW5pdGlvIn1dLCAiaW52aXRhdGlvbl9pZCI6IDJ9" alt="Link">Click Here!</a> </p>
-                                      <p>
-                                      Team,
-                                      <br/>
-                                      iQuizUAnswer
-                                      </p>
-                                  	</td>
-                                </tr>
-                            </table>
-
+          <!-- Start: Main content container -->
+          <table
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            align="center"
+            class="deviceWidth"
+            style="
+              width: 580px;
+              margin-top: 0;
+              margin-bottom: 0;
+              margin-right: auto;
+              margin-left: auto;
+              border-spacing: 0;
+              border-collapse: collapse;
+              mso-table-lspace: 0;
+              mso-table-rspace: 0;
+            "
+          >
+            <tr>
+              <td
+                align="center"
+                bgcolor="#FFFFFF"
+                style="
+                  border-left-width: 1px;
+                  border-left-style: solid;
+                  border-left-color: #e2e3e7;
+                  border-right-width: 1px;
+                  border-right-style: solid;
+                  border-right-color: #e2e3e7;
+                  border-bottom-width: 15px;
+                  border-bottom-style: solid;
+                  border-bottom-color: #e2e3e7;
+                  border-collapse: collapse;
+                  mso-table-lspace: 0;
+                  mso-table-rspace: 0;
+                "
+              >
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  bgcolor="#ffffff"
+                  class="deviceWidth"
+                  style="
+                    width: 580px;
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    mso-table-lspace: 0;
+                    mso-table-rspace: 0;
+                  "
+                >
+                  <tr>
+                    <td
+                      bgcolor="#D3E3FC"
+                      align="left"
+                      valign="top"
+                      bgcolor="#ffffff"
+                      class="bodyText"
+                      style="
+                        padding-top: 45px;
+                        padding-bottom: 15px;
+                        padding-right: 45px;
+                        padding-left: 45px;
+                        border-collapse: collapse;
+                        mso-table-lspace: 0;
+                        mso-table-rspace: 0;
+                        color: #222222;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        line-height: 20px;
+                        mso-line-height-rule: exactly;
+                        vertical-align: top;
+                        text-decoration: none;
+                      "
+                    >
+                      <p>{{message}}</p>
+                      <p>
+                        Team,
+                        <br />
+                        iQuizUAnswer
+                      </p>
+                    </td>
+                  </tr>
+                </table>
 
                 <!-- Start: Footer section -->
-                <table border="0" cellpadding="0"  cellspacing="0" align="center"   style="width:580px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                    <tr>
-                        <td align="center" valign="top" bgcolor="#F7F9FB"  class="removePaddingForMobile whiteBackgroundForMobile" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-
-
-                            <!-- Start: Social Media icons -->
-                            <table border="0" cellspacing="0" cellpadding="0" align="center"  class="deviceWidth" style="width:410px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                                <tr>
-                                    <td  bgcolor="#F7F9FB" style="padding-top:15px;padding-bottom:15px;padding-right:0;padding-left:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="deviceWidth" style="border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                                            <tr>
-
-                                                <td align="center" valign="top" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                                                    <a href="https://www.facebook.com/iQuizUAnswer/" target="_blank">
-                                                        <img alt="Facebook Icon"  src="https://eoa-editor.s3.amazonaws.com/94876e6adafb276573ad4925a4d8ca5d2926da27%2Fface.png" width="33" height="33" border="0" style="display:block;border-width:0;-ms-interpolation-mode:bicubic;" >
-
-                                                  </a>
-                                                </td>
-                                                <td align="center" valign="top" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                                                    <a href="https://instagram.com/iquizuanswer?igshid=YmMyMTA2M2Y=" target="_blank">
-                                                        <img alt="Instagram Icon" src="https://eoa-editor.s3.amazonaws.com/94876e6adafb276573ad4925a4d8ca5d2926da27%2Finsta.png" width="33" height="33" border="0" style="display:block;border-width:0;-ms-interpolation-mode:bicubic;" >
-
-                                                  </a>
-                                                </td>
-                                                <td align="center" valign="top" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                                                    <a href="https://www.linkedin.com/company/iquizuanswer/" target="_blank">
-                                                        <img alt="Linkedin Icon" src="https://eoa-editor.s3.amazonaws.com/94876e6adafb276573ad4925a4d8ca5d2926da27%2Flinkdin.png" width="33" height="33" border="0" style="display:block;border-width:0;-ms-interpolation-mode:bicubic;" >
-
-                                                  </a>
-                                                </td>
-
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  style="
+                    width: 580px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    mso-table-lspace: 0;
+                    mso-table-rspace: 0;
+                  "
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      valign="top"
+                      bgcolor="#F7F9FB"
+                      class="removePaddingForMobile whiteBackgroundForMobile"
+                      style="
+                        border-collapse: collapse;
+                        mso-table-lspace: 0;
+                        mso-table-rspace: 0;
+                      "
+                    >
+                      <!-- Start: Social Media icons -->
+                      <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        align="center"
+                        class="deviceWidth"
+                        style="
+                          width: 410px;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                          margin-right: auto;
+                          margin-left: auto;
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          mso-table-lspace: 0;
+                          mso-table-rspace: 0;
+                        "
+                      >
+                        <tr>
+                          <td
+                            bgcolor="#F7F9FB"
+                            style="
+                              padding-top: 15px;
+                              padding-bottom: 15px;
+                              padding-right: 0;
+                              padding-left: 0;
+                              border-collapse: collapse;
+                              mso-table-lspace: 0;
+                              mso-table-rspace: 0;
+                            "
+                          >
+                            <table
+                              width="100%"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              align="center"
+                              class="deviceWidth"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                                mso-table-lspace: 0;
+                                mso-table-rspace: 0;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  align="center"
+                                  valign="top"
+                                  style="
+                                    border-collapse: collapse;
+                                    mso-table-lspace: 0;
+                                    mso-table-rspace: 0;
+                                  "
+                                >
+                                  <a
+                                    href="https://www.facebook.com/iQuizUAnswer/"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      alt="Facebook Icon"
+                                      src="https://eoa-editor.s3.amazonaws.com/94876e6adafb276573ad4925a4d8ca5d2926da27%2Fface.png"
+                                      width="33"
+                                      height="33"
+                                      border="0"
+                                      style="
+                                        display: block;
+                                        border-width: 0;
+                                        -ms-interpolation-mode: bicubic;
+                                      "
+                                    />
+                                  </a>
+                                </td>
+                                <td
+                                  align="center"
+                                  valign="top"
+                                  style="
+                                    border-collapse: collapse;
+                                    mso-table-lspace: 0;
+                                    mso-table-rspace: 0;
+                                  "
+                                >
+                                  <a
+                                    href="https://instagram.com/iquizuanswer?igshid=YmMyMTA2M2Y="
+                                    target="_blank"
+                                  >
+                                    <img
+                                      alt="Instagram Icon"
+                                      src="https://eoa-editor.s3.amazonaws.com/94876e6adafb276573ad4925a4d8ca5d2926da27%2Finsta.png"
+                                      width="33"
+                                      height="33"
+                                      border="0"
+                                      style="
+                                        display: block;
+                                        border-width: 0;
+                                        -ms-interpolation-mode: bicubic;
+                                      "
+                                    />
+                                  </a>
+                                </td>
+                                <td
+                                  align="center"
+                                  valign="top"
+                                  style="
+                                    border-collapse: collapse;
+                                    mso-table-lspace: 0;
+                                    mso-table-rspace: 0;
+                                  "
+                                >
+                                  <a
+                                    href="https://www.linkedin.com/company/iquizuanswer/"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      alt="Linkedin Icon"
+                                      src="https://eoa-editor.s3.amazonaws.com/94876e6adafb276573ad4925a4d8ca5d2926da27%2Flinkdin.png"
+                                      width="33"
+                                      height="33"
+                                      border="0"
+                                      style="
+                                        display: block;
+                                        border-width: 0;
+                                        -ms-interpolation-mode: bicubic;
+                                      "
+                                    />
+                                  </a>
+                                </td>
+                              </tr>
                             </table>
-                            <!-- End: Social Media icons -->
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End: Social Media icons -->
 
-
-                            <!-- Start: Footer contact details and unsubscribe link -->
-                            <table border="0" cellspacing="0" cellpadding="0" align="center"  class="deviceWidth" style="width:410px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-spacing:0;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;" >
-                                <tr>
-                                    <td bgcolor="#F7F9FB" align="center" valign="top" class="footerText" style="border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;font-family:Arial, sans-serif;font-size:12px;color:#999999;font-weight:bold;line-height:18px;mso-line-height-rule:exactly;text-align:center;vertical-align:top;" >
-
-
-                                        <a href="mailto:support@iquizuanser.com" style="color:#999999;text-decoration:none;" >support@iquizuanswer.com</a>
-
-                                    </td>
-                                </tr>
-
-
-                            </table>
-                            <!-- End: Footer contact details and unsubscribe link -->
-
-                        </td>
-                    </tr>
+                      <!-- Start: Footer contact details and unsubscribe link -->
+                      <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        align="center"
+                        class="deviceWidth"
+                        style="
+                          width: 410px;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                          margin-right: auto;
+                          margin-left: auto;
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          mso-table-lspace: 0;
+                          mso-table-rspace: 0;
+                        "
+                      >
+                        <tr>
+                          <td
+                            bgcolor="#F7F9FB"
+                            align="center"
+                            valign="top"
+                            class="footerText"
+                            style="
+                              border-collapse: collapse;
+                              mso-table-lspace: 0;
+                              mso-table-rspace: 0;
+                              font-family: Arial, sans-serif;
+                              font-size: 12px;
+                              color: #999999;
+                              font-weight: bold;
+                              line-height: 18px;
+                              mso-line-height-rule: exactly;
+                              text-align: center;
+                              vertical-align: top;
+                            "
+                          >
+                            <a
+                              href="mailto:support@iquizuanser.com"
+                              style="color: #999999; text-decoration: none"
+                              >support@iquizuanswer.com</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End: Footer contact details and unsubscribe link -->
+                    </td>
+                  </tr>
                 </table>
 
                 <!-- End: Footer section -->
-
-            </td>
-        </tr>
-
+              </td>
+            </tr>
+          </table>
+          <!-- End: Wrapper -->
+        </td>
+      </tr>
     </table>
-    <!-- End: Wrapper -->
-
-    <div style="display:none;white-space:nowrap;font-style:normal;font-variant:normal;font-weight:normal;font-size:15px;font-family:courier;line-height:0;" >
-    </div>
-
-</body>
-
+    <div
+      style="
+        display: none;
+        white-space: nowrap;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;
+        font-family: courier;
+        line-height: 0;
+      "
+    ></div>
+  </body>
 </html>
